@@ -1,0 +1,31 @@
+api:
+  root: https://api.openweathermap.org/data/2.5
+
+swagger:
+  host:
+    url: localhost:8080
+    path:
+
+# DATASOURCE
+spring:
+  datasource:
+    url: jdbc:h2:file:~/test
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  mustache:
+    suffix: .html
+
+graphql:
+  servlet:
+    mapping: /graphql
+    enabled: true
+    corsEnabled: true
+graphiql:
+  mapping: /graphiql
+  endpoint: /graphql
+  enabled: true
+  pageTitle: GraphiQL
+  cdn:
+    enabled: false
+    version: 0.11.11
