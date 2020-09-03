@@ -1,4 +1,4 @@
-package br.kt.spring.Ql.tempoRest.Tempo.Rest.config
+package br.springkt.temporest.config
 
 import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.context.annotation.Configuration

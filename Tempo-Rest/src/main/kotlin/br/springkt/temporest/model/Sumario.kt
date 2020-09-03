@@ -1,4 +1,4 @@
-package br.kt.spring.Ql.tempoRest.Tempo.Rest.model
+package br.springkt.temporest.model
 
 data class RelatorioTempo(
     val pais:String,
@@ -7,7 +7,7 @@ data class RelatorioTempo(
     val icon:String?,
     val temperatura:Double?
 ){
-    constructor(pais:String,cidade: String,tempo:Tempo?)
+    constructor(pais:String,cidade: String,tempo: Tempo?)
     :this(pais,cidade,tempo?.id,tempo?.climaIcone,tempo?.temp)
 
     fun obterTemperaturaFahrenheit():String {

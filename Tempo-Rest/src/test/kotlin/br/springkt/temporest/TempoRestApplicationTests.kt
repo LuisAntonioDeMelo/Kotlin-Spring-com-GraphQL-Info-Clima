@@ -1,4 +1,4 @@
-package br.kt.spring.Ql.tempoRest.Tempo.Rest
+package br.springkt.temporest
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

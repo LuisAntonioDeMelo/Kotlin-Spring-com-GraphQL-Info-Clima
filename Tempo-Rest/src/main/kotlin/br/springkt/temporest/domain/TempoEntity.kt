@@ -1,4 +1,4 @@
-package br.kt.spring.Ql.tempoRest.Tempo.Rest.domain
+package br.springkt.temporest.domain
 
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue

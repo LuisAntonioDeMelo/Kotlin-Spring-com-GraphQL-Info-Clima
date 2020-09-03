@@ -1,4 +1,4 @@
-package br.kt.spring.Ql.tempoRest.Tempo.Rest.model
+package br.springkt.temporest.model
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import java.sql.Timestamp
