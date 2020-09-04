@@ -19,5 +19,6 @@ class  TempoRestController {
     fun get(@RequestParam(name="cidade") cidade:String,
     @RequestParam(name="codigoPais") codigoPais:String): Tempo? {
         return tempoServiceApi.obterInformacaoDoClima(cidade= cidade, codigoPais = codigoPais)
+        //return "{}"
     }
 }

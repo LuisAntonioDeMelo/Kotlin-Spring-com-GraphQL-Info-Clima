@@ -8,10 +8,10 @@ data class RelatorioTempo(
     val temperatura:Double?
 ){
     constructor(pais:String,cidade: String,tempo: Tempo?)
-    :this(pais,cidade,tempo?.id,tempo?.climaIcone,tempo?.temp)
+    :this(pais,cidade,tempo?.id,tempo?.weatherIcon,tempo?.temp)
 
     fun obterTemperaturaFahrenheit():String {
-        val fahrenheit = (this.temperatura !! *1.8) -459;67
+        val fahrenheit = (this.temperatura !! *1.8) -459.67
         return String.format("%4,2f",fahrenheit)
     }
 

@@ -23,7 +23,6 @@ class TempoServiceApi {
                 .fromPath("/weather?q={city},{countryCode}&appId={appId}")
                 .buildAndExpand(cidade,codigoPais, ClimaAppConstantes.Token)
                 .toUriString()
-        // caso erro converter objeto para classe utilizada
         return restTemplate.getForEntity(uriString, Tempo::class.java).body
     }
 }
