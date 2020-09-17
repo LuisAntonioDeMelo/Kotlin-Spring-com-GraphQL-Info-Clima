@@ -9,12 +9,8 @@ import org.springframework.stereotype.Service
 @Service
 class  TempoService (val tempoRepository: TempoRepository){
 
-    fun obterTempo(nomeCidade:String,codigoPais:String){
-//        val tempoEntity = tempoRepository.obterCidadePorCodigoDoPais(nomeCidade,codigoPais)
-//                .orElseThrow{
-//                    throw DomainNotFoundException("Um erro inesperado ocorreu")
-//                }
-//        return
+    fun obterTodos(): MutableIterable<TempoEntity> {
+        return tempoRepository.findAll()
     }
 
    fun findById(id:Long):TempoDto{
